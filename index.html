@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/lib/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="new-todo" />
+    <button class="add-todo">Add</button>
+    <button class="clear-all-done">Clear all done</button>
+    <ul id="todos"></ul>
+    <script src="js/lib/jquery-min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+    <script id="todoTemplate" type="text/html">
+      <div class="title"><%= title %></div>
+      <button class="done">Done</button>
+      <button class="undo">Undo</button>
+      <button class="clear">Clear</button>
+    </script>
+  </body>
+</html>
